@@ -32,11 +32,6 @@ function calculateCircleNumbers2(arrayFilter: number[]){ // La segunda manera qu
     printResult()
 }
 
-function printResult(){
-    console.log(`Hay un total de ${result} numeros circulares`)
-    result = 0;
-}
-
 function calculateCircleNumbersJuanCarlos(){
     const numerosCirculares = [0, 6, 8, 9];
 
@@ -51,6 +46,11 @@ function calculateCircleNumbersJuanCarlos(){
         return contador;
     }
 console.log(`Hay un total de ${checkCircular(1689208230326)} numeros circulares`);
+}
+
+function printResult(){
+    console.log(`Hay un total de ${result} numeros circulares`)
+    result = 0;
 }
 
 calculateCircleNumbers(inputArray)
