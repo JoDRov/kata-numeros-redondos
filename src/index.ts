@@ -37,5 +37,22 @@ function printResult(){
     result = 0;
 }
 
+function calculateCircleNumbersJuanCarlos(){
+    const numerosCirculares = [0, 6, 8, 9];
+
+    const checkCircular = (numero: number): number => {
+        let contador: number = 0;
+        const digitos = numero.toString().split("").map(Number);
+        digitos.forEach((digit) => {
+            if (numerosCirculares.includes(digit)) {
+                contador += 1;
+            }
+        })
+        return contador;
+    }
+console.log(`Hay un total de ${checkCircular(1689208230326)} numeros circulares`);
+}
+
 calculateCircleNumbers(inputArray)
 calculateCircleNumbers2(inputArray)
+calculateCircleNumbersJuanCarlos()
